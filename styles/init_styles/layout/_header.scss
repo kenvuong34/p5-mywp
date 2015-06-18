@@ -1,0 +1,167 @@
+/*
+
+Header scss
+
+*/
+
+.header{
+  @include background-size(cover);
+
+  .color-overlay{
+    background: rgba(0, 0, 0, 0.55);
+  }
+  .navigation{
+    background: none;
+    padding: 20px 0px;
+  }
+  .intro-section{
+    padding-top: 28%;
+    text-align: center;
+    padding-bottom: 18%;
+  }
+
+  .intro-button{
+    margin-top: 60px;
+  }
+}
+
+.current-lang{
+  display: none !important;
+}
+
+.navbar-brand{
+  display: inline-block;
+//  background: url("./assets/logo/p5-logo@2x.png") no-repeat center center;
+  @include at2x('./assets/logo/p5-logo', 'png');
+  width: 156px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  //  @include at2x('../img/logo/p5-logo', 'png', 50);
+  box-sizing: content-box;
+
+    background-size: 156px 50px !important;
+}
+
+
+
+.sticky-navigation{
+  background: transparent;
+  -webkit-transition: background-color 500ms linear;
+  -moz-transition: background-color 500ms linear;
+  -o-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+    
+ 
+
+  /*Background menu*/
+  &.navbar-background{
+    background: $color-bg;
+    border-bottom: 1px solid $color-gray;
+    .navbar-brand{
+//      background: url("./assets/logo/p5-logo-color@2x.png") no-repeat center center;
+        @include at2x('./assets/logo/p5-logo-color', 'png');
+    }
+    .navbar-nav{
+      li{
+        a{
+          color: $color-dark;
+          &:hover{
+            color: $color-darken;
+              text-shadow: 0 0 1px lighten($color-dark,30%);
+          }
+        }
+        &.current{
+          a{
+            color: $color-darken;
+              text-shadow: 0 0 1px lighten($color-dark,30%);
+          }
+        }
+      }
+
+      .btn-git{
+        a{
+          border: 1px solid $color-dark;
+          @include transition(all, 0.3s, ease-in-out);
+          &:hover{
+            background: $color-dark;
+            color: $color-bg;
+          }
+        }
+
+      }
+    }
+  }
+  /*end Background menu*/
+
+  .navbar-nav{
+      margin-top: 0;
+    margin-bottom: 0;
+    li{
+      padding: 20px 10px;
+      a{
+        position: relative;
+        display: block;
+        padding: 7px 10px;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 14px;
+        background: none;
+        &:hover{
+          background: none;
+            text-shadow: 0 0 0.1em darken(#fff,10%);
+            
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+
+      &.current{
+        a{
+          text-shadow: 0 0 0.1em darken(#fff,10%);
+        }
+      }
+    }
+  }
+}
+
+.btn-git{
+  a{
+    padding: 6px 12px;
+    display: inline-block;
+    border: 1px solid $color-bg;
+    @include transition(all, 0.3s, ease-in-out);
+      text-shadow: none !important;
+  }
+  i{
+    font-weight: 100;
+    font-size: 16px;
+    top: -2px;
+    position: relative;
+      margin-right: 4px;
+  }
+}
+
+.navbar-toggle{
+  color: $color-dark;
+  font-size: 30px;
+}
+
+
+.language{
+  a{
+    text-transform: uppercase;
+  }
+}
+
+/*Animation header*/
+.pinned{
+  @include transform(translate(0,0));
+  @include transition(all, 0.5s, ease-in-out);
+}
+.un-pinned{
+  @include transform(translate(0,-100%));
+  @include transition(all, 0.5s, ease-in-out);
+}

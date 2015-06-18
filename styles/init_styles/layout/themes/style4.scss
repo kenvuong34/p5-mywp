@@ -1,0 +1,70 @@
+/*Font color*/
+$heading_font_color: $color-bg;
+$body_font_color: $color-bg;
+$body_hover_font_color: $color-gray;
+
+
+/*Link color*/
+$link_font_color: $color-bg;
+$link_hover_font_color: $color-gray;
+
+$strong-color: $color-gray;
+
+/*Socials icon color*/
+$socials-color: $color-bg;
+$socials-hover-color: darken($socials-color,10%);
+
+/*Section bg color*/
+$section_bg_color: $color-primary;
+
+/*Button primary variable*/
+$button_bkgd_color: $color-bg;
+$button_hover_bkgd_color: $color-gray;
+$button_font_color: $color-primary;
+$button_hover_font_color: $color-primary;
+$button_border_color: $color-bg;
+$button_hover_border_color: $color-bg;
+
+$button-transition: 0.3s;
+$button-border-radius: 0px;
+
+/*Button secondary variable*/
+$secondary_button_bkgd_color: transparent;
+$secondary_button_hover_bkgd_color: $color-bg;
+$secondary_button_font_color: $color-bg;
+$secondary_button_hover_font_color: $color-primary;
+$secondary_button_border_color: $color-bg;
+$secondary_button_hover_border_color: $color-bg;
+$secondary_button-border-radius: 0px;
+
+
+/*Button tertiary variable*/
+$tertiary_button_bkgd_color: transparent;
+$tertiary_button_hover_bkgd_color: $color-bg;
+$tertiary_button_font_color: $color-bg;
+$tertiary_button_hover_font_color: $color-primary;
+$tertiary_button_border_color: $color-bg;
+$tertiary_button_hover_border_color: $color-bg;
+$tertiary_button-border-radius: 50px;
+
+/*Input style*/
+$input_bg_color: $color-secondary;
+$input_border_color: transparent;
+$input_text_color: $color-bg;
+$input_placeholder_color: $color-gray;
+
+
+/*Box item*/
+$box-border-color: $color-secondary;
+$box-hover-border-color: $color-secondary;
+$box-bg-color: $color-primary;
+$box-hover-bg-color: $color-secondary;
+
+$box-number-bg: $color-secondary;
+
+/*Line color*/
+$line-color: $color-secondary;
+
+.p5theme-row-p5style4{
+  @import "base";
+}

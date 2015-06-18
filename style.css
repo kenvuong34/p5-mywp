@@ -1,0 +1,52 @@
+/*
+ Theme Name: Minimal P5 Child
+ Version: 1.0
+ Description: This is a boilerplate theme to quick start a Landing Page project
+ Author: ben
+ Author URI: http://www.platform5.ch
+ Template: p5parent
+ */
+/*
+ Place below the styles (using SCSS) for the theme
+ Note : the SCSS variables defined in the file /styles/variables.scss are available in the code below
+ */
+/* 
+ This is an example of SCSS customization of the metaslider (using flexslider)
+ */
+.metaslider .flex-direction-nav a {
+  background-image: url("assets/bg_direction_nav.png"); }
+  .metaslider .flex-direction-nav .flex-prev {
+    left: -45px; }
+  .metaslider .flex-direction-nav .flex-next {
+    background-position: 100% 0;
+    right: -45px; }
+  .metaslider .flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    text-align: center; }
+  .metaslider .flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+  .metaslider .flex-control-paging li a {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #839091;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: none; }
+  .metaslider .flex-control-paging li a:hover {
+    background: #fff;
+    border-color: #839091; }
+  .metaslider .flex-control-paging li a.flex-active {
+    background: #fff;
+    border-color: #839091;
+    cursor: default; }

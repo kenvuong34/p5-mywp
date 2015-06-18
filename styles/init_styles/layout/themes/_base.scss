@@ -1,0 +1,136 @@
+/*Section background-color*/
+&{
+  background: $section_bg_color;
+}
+
+/*Font-color*/
+h1,h2,h3,h4,h5,h6{
+  color: $heading_font_color;
+}
+
+.strong-color{
+  color: $strong-color;
+}
+
+p{
+  color: $body_font_color;
+  /*Link color*/
+  a{
+    color: $link_font_color;
+    &:hover{
+      color: $link_hover_font_color;
+    }
+  }
+}
+
+a.text-link{
+  color: $body_font_color;
+  &:hover{
+    color: $body_hover_font_color;
+  }
+  &.current{
+    color: $body_hover_font_color;
+  }
+}
+
+
+/*Button custom style*/
+.primary-button{
+  color: $button_font_color;
+  background-color: $button_bkgd_color;
+  border-color: $button_border_color;
+  transition-duration: $button-transition;
+  @include border-radius($button-border-radius);
+
+  &:hover, &:active,&:focus{
+    color: $button_hover_font_color;
+    background-color: $button_hover_bkgd_color;
+    border-color: $button_hover_border_color;
+  }
+}
+
+
+.secondary-button{
+  color: $secondary_button_font_color;
+  background-color:  $secondary_button_bkgd_color;
+  border-color: $secondary_button_border_color;
+  transition-duration: $button-transition;
+  @include border-radius($secondary_button-border-radius);
+
+  &:hover, &:active,&:focus{
+    color: $secondary_button_hover_font_color;
+    background-color: $secondary_button_hover_bkgd_color;
+    border-color: $secondary_button_hover_border_color;
+  }
+}
+
+
+.tertiary-button{
+  color: $tertiary_button_font_color;
+  background-color:  $tertiary_button_bkgd_color;
+  border-color: $tertiary_button_border_color;
+  transition-duration: $button-transition;
+  @include border-radius($tertiary_button-border-radius);
+
+  &:hover, &:active,&:focus{
+    color: $tertiary_button_hover_font_color;
+    background-color: $tertiary_button_hover_bkgd_color;
+    border-color: $tertiary_button_hover_border_color;
+  }
+}
+
+/*Input style*/
+
+/*Input style*/
+.form-group {
+  input,
+  textarea {
+    @include placeholder {
+      color: $input_placeholder_color;
+    }
+    border: 1px solid $input_border_color;
+    background-color: $input_bg_color;
+    color: $input_text_color;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+/*Box style*/
+.box{
+  border-color: $box-border-color;
+  background: $box-bg-color;
+  .box-img{
+    .box-number{
+      background: $box-number-bg;
+    }
+  }
+}
+
+a.box-link{
+  &:hover{
+    .box{
+      border-color: $box-hover-border-color;
+      background: $box-hover-bg-color;
+    }
+  }
+}
+
+&.center-border{
+  &:before{
+    background: $line-color;
+  }
+}
+
+
+&.top-border{
+  border-color: $line-color;
+}
+
+&.bottom-border{
+  border-color: $line-color;
+}
+
+

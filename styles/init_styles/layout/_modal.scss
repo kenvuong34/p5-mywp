@@ -1,0 +1,52 @@
+/*
+
+MODAL scss
+
+*/
+
+.modal{
+  .p5theme-row-p5style2{
+    padding: 15px;
+  }
+
+  .modal-content{
+    background: $color-gray;
+    @include border-radius(0);
+    border: none;
+    position: relative;
+  }
+
+  .close-modal{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 1;
+    font-size: 30px;
+    color: $color-dark;
+    &:hover{
+      color: $color-darken;
+    }
+  }
+
+  button[type="submit"]{
+    display: block;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: $color-primary;
+    &:hover{
+      background: $color-secondary;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .modal {
+    .p5theme-row-p5style2 {
+      padding: 35px 15px;
+    }
+  }
+}
+

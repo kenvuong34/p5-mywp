@@ -1,0 +1,71 @@
+/*Font color*/
+$heading_font_color: $color-darken;
+$body_font_color: $color-dark;
+$body_hover_font_color: $color-darken;
+
+
+/*Link color*/
+$link_font_color:$color-primary;
+$link_hover_font_color: $color-secondary;
+
+$strong-color: $color-secondary;
+
+/*Socials icon color*/
+$socials-color: $color-primary;
+$socials-hover-color: darken($socials-color,10%);
+
+
+/*Section bg color*/
+$section_bg_color: $color-gray;
+
+/*Button primary variable*/
+$button_bkgd_color: $color-dark;
+$button_hover_bkgd_color: $color-darken;
+$button_font_color: $color-bg;
+$button_hover_font_color: $color-bg;
+$button_border_color: transparent;
+$button_hover_border_color: transparent;
+
+$button-transition: 0.3s;
+$button-border-radius: 0px;
+
+
+/*Button secondary variable*/
+$secondary_button_bkgd_color: transparent;
+$secondary_button_hover_bkgd_color: $color-dark;
+$secondary_button_font_color: $color-dark;
+$secondary_button_hover_font_color: $color-bg;
+$secondary_button_border_color: $color-dark;
+$secondary_button_hover_border_color: $color-dark;
+$secondary_button-border-radius: 0px;
+
+/*Button tertiary variable*/
+$tertiary_button_bkgd_color: transparent;
+$tertiary_button_hover_bkgd_color: $color-dark;
+$tertiary_button_font_color: $color-dark;
+$tertiary_button_hover_font_color: $color-bg;
+$tertiary_button_border_color: $color-dark;
+$tertiary_button_hover_border_color: $color-dark;
+$tertiary_button-border-radius: 50px;
+
+/*Input style*/
+$input_bg_color: $color-bg;
+$input_border_color: transparent;
+$input_text_color: $color-darken;
+$input_placeholder_color: $color-dark;
+
+
+/*Box item*/
+$box-border-color: $color-bg;
+$box-hover-border-color: $color-bg;
+$box-bg-color: $color-gray;
+$box-hover-bg-color: $color-bg;
+
+$box-number-bg: $color-bg;
+
+/*Line color*/
+$line-color: $color-bg;
+
+.p5theme-row-p5style2{
+  @import "base";
+}
